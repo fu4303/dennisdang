@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "name": "sapper-now-template",
-    "alias": "sapper-now-template",
+    "name": "portfolio-v3",
+    "alias": "portfolio-v3",
     "builds": [
       {
         "src": "__sapper__/build/index.js",
