@@ -1,5 +1,9 @@
 <script>
-  import BioHeader from "../../components/BioHeader.svelte";
+  import Header from "./_components/Header.svelte";
+  import About from "./_components/About.svelte";
+
+  let pirateMode = false;
 </script>
 
-<BioHeader />
+<Header pirateMode />
+<About pirateMode />

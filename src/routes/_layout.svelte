@@ -1,5 +1,17 @@
 <script>
-  import Nav from "../components/Nav.svelte";
+  import { onMount } from "svelte";
+  import Nav from "./_components/Nav.svelte";
+
+  // onMount(async () => {
+  //   if (typeof window !== "undefined") {
+  //     const particlesJs = await import("particles.js");
+
+  //     console.log({ particlesJS });
+  //     particlesJS.load("particles-js", "particles.json", function() {
+  //       console.log("callback - particles.js config loaded");
+  //     });
+  //   }
+  // });
 
   export let segment;
 </script>
@@ -7,7 +19,7 @@
 <style>
   main {
     position: relative;
-    max-width: 56em;
+    max-width: 650px;
     background-color: white;
     padding: 2em;
     margin: 0 auto;
@@ -21,6 +33,6 @@
 
 <Nav {segment} />
 
-<main>
+<main id="particles-js">
   <slot />
 </main>
