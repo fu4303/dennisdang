@@ -1,3 +1,6 @@
+// If you prefer to build with webpack, change this back to a js file
+// Rename the rollup config as well
+
 const webpack = require('webpack');
 const config = require('sapper/config/webpack.js');
 const pkg = require('./package.json');
