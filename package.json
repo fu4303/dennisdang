@@ -1,6 +1,6 @@
 {
-  "name": "sapper-now-template",
-  "description": "sapper-now-template",
+  "name": "portfolio-v3",
+  "description": "My blazing fast, lightweight, reactive portfolio and blog. lol",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
