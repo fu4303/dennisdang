@@ -34,10 +34,11 @@
   }
 
   a {
-	display: block;
-	font-size: 18px;
-	text-decoration: none;
-	padding: 4px;
+    color: #419eda;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 4px;
   }
 </style>
 
