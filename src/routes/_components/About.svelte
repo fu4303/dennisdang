@@ -3,35 +3,63 @@
 </script>
 
 <style>
+  a {
+    color: #6876c5;
+    text-decoration: none;
+  }
   h3 {
     font-size: 24px;
     margin-bottom: 8px;
   }
 
   p {
-    font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    margin: 0;
   }
 
-  .about li {
+  @media (min-width: 568px) {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .about .grid-list {
     display: grid;
     grid-template-columns: 80px 1fr;
     grid-gap: 20px;
-    list-style: none;
   }
 
-  .about ul {
+  .about {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-content: center;
+    padding-left: 0;
+  }
+
+  .highlight {
+    color: #6876c5;
+  }
+
+  .work {
+    padding-left: 20px;
+  }
+  .work li {
+    font-size: 16px;
+  }
+
+  @media (min-width: 568px) {
+    .work li {
+      font-size: 18px;
+    }
   }
 </style>
 
-<section class="about">
-  <ul>
+<section>
+  <ul class="about">
 
-    <!-- <li>
+    <li class="grid-list">
       <div class="icon">
         {#if pirateMode}
           <img
@@ -48,9 +76,9 @@
           <a href="/blog">blog!</a>
         </p>
       </div>
-    </li> -->
+    </li>
 
-    <li>
+    <li class="grid-list">
       <div class="icon">
         {#if pirateMode}
           <img
@@ -62,24 +90,28 @@
       </div>
       <div>
         <h3>Trending Interests</h3>
-        <p>Ocaml + Reason, Go, Swift, blockchain.</p>
+        <p class="highlight">Ocaml + Reason, Swift.</p>
         <p>Urban hip-hop dance, politics, podcasts.</p>
       </div>
     </li>
 
-    <li>
+    <li class="grid-list">
       <div class="icon">
         {#if pirateMode}
           <img
             src="pirate/doublesword-pirate-piratesword-set-sword-weapon.svg"
-            alt="Octopus" />
+            alt="Double sword" />
         {:else}
           <img src="diagram.svg" alt="Diagram" />
         {/if}
       </div>
       <div>
         <h3>Work Experience</h3>
-        <ul>
+        <ul class="work">
+          <li class="highlight">
+            Mount Sinai Digital Consumer
+            <span>(current)</span>
+          </li>
           <li>Kelley Blue Book</li>
           <li>Experian</li>
           <li>Q2 Solutions</li>
@@ -87,22 +119,33 @@
       </div>
     </li>
 
-    <li>
+    <li class="grid-list">
       <div class="icon">
-        <!-- {theme === 'default' ? <ProjectIcon /> : <CannonIcon />} -->
+        <div class="icon">
+          {#if pirateMode}
+            <img src="pirate/cannon-pirate-set-weapon.svg" alt="Cannon" />
+          {:else}
+            <img src="project.svg" alt="Project" />
+          {/if}
+        </div>
       </div>
       <div>
         <h3>Tech Stack</h3>
-        <p>
-          Professional: Javascript, AWS, Node, React, GraphQL, Typescript, CSS
-          Flexbox & Grid
-        </p>
-        <p>Familiar: Python, C, C++, Java</p>
+        <p>Javascript & Typescript, React, AWS, Go, Node, GraphQL, CSS</p>
       </div>
     </li>
-    <li>
+
+    <li class="grid-list">
       <div class="icon">
-        <!-- {theme === 'default' ? <BinocularIcon /> : <BottleLetterIcon />} -->
+        <div class="icon">
+          {#if pirateMode}
+            <img
+              src="pirate/bottle-bottletter-letter-pirate-sea-set.svg"
+              alt="Letter in a Bottle" />
+          {:else}
+            <img src="binoculars.svg" alt="Binoculars" />
+          {/if}
+        </div>
       </div>
       <div>
         <h3>Contact</h3>
@@ -115,5 +158,6 @@
         </p>
       </div>
     </li>
+
   </ul>
 </section>
