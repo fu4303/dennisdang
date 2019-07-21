@@ -1,13 +1,11 @@
-# sapper-now-template
+# My new blog built on top of Sapper
 
 Origin [sapper-template](https://github.com/sveltejs/sapper-template)
 
 ## Start coding
-`npm install`
+`yarn`
 
-`npm run dev`
+`yarn dev`
 
 ## Deploy on now.sh
-`npm run build`
-
-`now`
+`yarn deploy`
