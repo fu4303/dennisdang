@@ -2,16 +2,26 @@
   import { onMount } from "svelte";
   import Nav from "./_components/Nav.svelte";
 
-  // onMount(async () => {
-  //   if (typeof window !== "undefined") {
-  //     const particlesJs = await import("particles.js");
+  const particlesJSON = {
+    "color": {
+      "value": "#000000"
+    },
+    "size": {
+      "value": 1.75
+    }
+  }
 
-  //     console.log({ particlesJS });
-  //     particlesJS.load("particles-js", "particles.json", function() {
-  //       console.log("callback - particles.js config loaded");
-  //     });
-  //   }
-  // });
+  
+  onMount(async () => {
+    if (typeof window !== "undefined") {
+      const particlesJs = await import("particles.js");
+
+      console.log({ particlesJS, particlesJSON });
+      particlesJS.load("particles-js", particlesJSON, function() {
+        console.log("callback - particles.js config loaded");
+      });
+    }
+  });
 
   export let segment;
 </script>
