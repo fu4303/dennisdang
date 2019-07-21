@@ -31,11 +31,14 @@
   }
 
   .about {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     justify-content: center;
-    padding-left: 0;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 
   .highlight {
@@ -59,7 +62,7 @@
 <section>
   <ul class="about">
 
-    <li class="grid-list">
+    <!-- <li class="grid-list">
       <div class="icon">
         {#if pirateMode}
           <img
@@ -76,7 +79,7 @@
           <a href="/blog">blog!</a>
         </p>
       </div>
-    </li>
+    </li> -->
 
     <li class="grid-list">
       <div class="icon">

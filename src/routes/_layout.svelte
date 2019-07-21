@@ -19,9 +19,9 @@
 <style>
   main {
     position: relative;
-    max-width: 650px;
+    /* max-width: 650px;
     background-color: white;
-    padding: 2em;
+    padding: 2em; */
     margin: 0 auto;
     box-sizing: border-box;
   }
