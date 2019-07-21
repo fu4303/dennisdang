@@ -4,7 +4,7 @@
 
 <style>
   a {
-    color: #6876c5;
+    color: #616eb7;
     text-decoration: none;
   }
   h3 {
@@ -42,7 +42,7 @@
   }
 
   .highlight {
-    color: #6876c5;
+    color: #616eb7;
   }
 
   .work {
@@ -154,7 +154,12 @@
         <h3>Contact</h3>
         <p>
           Find me on{' '}
-          <a href="https://twitter.com/dangitdennis" target="_blank">Twitter</a>
+          <a
+            href="https://twitter.com/dangitdennis"
+            target="_blank"
+            rel="noopener">
+            Twitter
+          </a>
           {' '} or email me
           <a href="mailto:dang.dennis9@gmail.com">here</a>
           .

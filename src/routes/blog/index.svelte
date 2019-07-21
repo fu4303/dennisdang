@@ -40,7 +40,7 @@
   }
 
   .title {
-    color: #6876c5;
+    color: #616eb7;
     font-size: 22px;
   }
 </style>

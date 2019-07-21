@@ -51,6 +51,7 @@
       <a
         class={segment === 'twitter' ? 'selected' : ''}
         href="https://twitter.com/dangitdennis"
+        rel="noopener"
         target="_blank">
         twitter
       </a>
@@ -59,6 +60,7 @@
       <a
         class={segment === 'github' ? 'selected' : ''}
         href="https://github.com/dangdennis"
+        rel="noopener"
         target="_blank">
         github
       </a>
