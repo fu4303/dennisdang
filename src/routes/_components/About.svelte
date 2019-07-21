@@ -62,7 +62,7 @@
 <section>
   <ul class="about">
 
-    <!-- <li class="grid-list">
+    <li class="grid-list">
       <div class="icon">
         {#if pirateMode}
           <img
@@ -79,7 +79,7 @@
           <a href="/blog">blog!</a>
         </p>
       </div>
-    </li> -->
+    </li>
 
     <li class="grid-list">
       <div class="icon">
