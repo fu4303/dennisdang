@@ -34,7 +34,7 @@
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
     justify-content: center;
     max-width: 650px;
     margin: 0 auto;

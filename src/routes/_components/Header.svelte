@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 72px;
+    margin: 72px 0;
     text-align: center;
   }
 
@@ -40,7 +40,7 @@
     margin: 0;
   }
 
-    @media (min-width: 480px) {
+  @media (min-width: 480px) {
     h1 {
       font-size: 32px;
     }

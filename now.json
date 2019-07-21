@@ -1,7 +1,6 @@
 {
     "version": 2,
     "name": "portfolio-v3",
-    "alias": "portfolio-v3",
     "builds": [
       {
         "src": "__sapper__/build/index.js",
