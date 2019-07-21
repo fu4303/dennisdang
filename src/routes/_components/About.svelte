@@ -41,6 +41,10 @@
     padding: 0 24px;
   }
 
+  .container {
+    margin-bottom: 64px;
+  }
+
   .highlight {
     color: #616eb7;
   }
@@ -59,7 +63,7 @@
   }
 </style>
 
-<section>
+<section class="container">
   <ul class="about">
 
     <li class="grid-list">
