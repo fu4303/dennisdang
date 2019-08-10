@@ -27,10 +27,15 @@
 		all elements inside .content
 	*/
   .container {
-    margin: 0 auto;
+    margin: 48px auto;
     max-width: 650px;
     padding: 0 24px;
   }
+
+  .content :global(*) {
+    color: rgba(17, 17, 17, 0.9);
+  }
+
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
@@ -56,6 +61,23 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+
+  header {
+    color: rgba(17, 17, 17, 1);
+  }
+
+  header h1 {
+    margin-bottom: 0.7em;
+  }
+  header p {
+    color: #616eb7a4;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  header hr {
+    min-width: 100px;
+    width: 100%;
+  }
 </style>
 
 <svelte:head>
@@ -63,9 +85,13 @@
 </svelte:head>
 
 <div class="container">
-  <h1>{post.title}</h1>
-
-  <div class="content">
+  <header>
+    <p>{post.printDate} ~ {post.printReadingTime}</p>
+    <h1>{post.title}</h1>
+    <hr />
+  </header>
+  <article class="content">
     {@html post.html}
-  </div>
+  </article>
+  <hr />
 </div>

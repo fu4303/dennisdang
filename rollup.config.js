@@ -6,10 +6,24 @@ import babel from 'rollup-plugin-babel';
 import json from 'rollup-plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
+import marked from 'marked';
+import pkg from './package.json';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+
+const onwarn = (warning, onwarn) =>
+  (warning.code === 'CIRCULAR_DEPENDENCY' && warning.message.includes('/@sapper/')) || onwarn(warning);
+const markdown = () => ({
+  transform(md, id) {
+    if (!/\.md$/.test(id)) return null;
+    const data = marked(md);
+    return {
+      code: `export default ${JSON.stringify(data.toString())};`,
+    };
+  },
+});
 
 export default {
   client: {
@@ -74,8 +88,11 @@ export default {
       }),
       resolve(),
       commonjs(),
+      markdown(),
     ],
-    external: [].concat(require('module').builtinModules || Object.keys(process.binding('natives'))),
+    external: Object.keys(pkg.dependencies).concat(
+      require('module').builtinModules || Object.keys(process.binding('natives')),
+    ),
   },
 
   serviceworker: {

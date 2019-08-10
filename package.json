@@ -15,10 +15,15 @@
     "deploy:prod": "yarn run build && now --target production"
   },
   "dependencies": {
-    "compression": "^1.7.1",
+    "compression": "^1.7.4",
+    "date-fns": "^1.30.1",
+    "gray-matter": "^4.0.2",
+    "marked": "^0.7.0",
     "particles.js": "^2.0.0",
     "polka": "^0.5.0",
-    "sirv": "^0.4.0"
+    "prismjs": "^1.17.1",
+    "reading-time": "^1.2.0",
+    "sirv": "^0.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
