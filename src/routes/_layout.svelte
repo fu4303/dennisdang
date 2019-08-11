@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import Nav from "./_components/Nav.svelte";
+  import Nav from "../components/Nav.svelte";
 
   const particlesJSON = {
     particles: {

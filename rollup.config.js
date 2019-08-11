@@ -7,7 +7,7 @@ import json from 'rollup-plugin-json';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import marked from 'marked';
-import pkg from './package.json';
+// import pkg from './package.json';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -90,9 +90,7 @@ export default {
       commonjs(),
       markdown(),
     ],
-    external: Object.keys(pkg.dependencies).concat(
-      require('module').builtinModules || Object.keys(process.binding('natives')),
-    ),
+    external: [].concat(require('module').builtinModules || Object.keys(process.binding('natives'))),
   },
 
   serviceworker: {

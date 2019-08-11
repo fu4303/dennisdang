@@ -1,6 +1,6 @@
 <script>
-  import Header from "./_components/Header.svelte";
-  import About from "./_components/About.svelte";
+  import Header from "../components/Header.svelte";
+  import About from "../components/About.svelte";
 
   let pirateMode = false;
 </script>

@@ -7,7 +7,7 @@
 </script>
 
 <script>
-  import Header from "../_components/Header.svelte";
+  import Header from "../../components/Header.svelte";
   export let posts;
   export let pirateMode = true;
 </script>

@@ -2,13 +2,13 @@
 // we don't want to create an `/blog/posts` route — the leading
 // underscore tells Sapper not to do that.
 
-const fs = require('fs');
-const path = require('path');
-const prism = require('prismjs');
-const marked = require('marked');
-const matter = require('gray-matter');
-const formatDate = require('date-fns/format');
-const readingTime = require('reading-time');
+import fs from 'fs';
+import path from 'path';
+import prism from 'prismjs';
+import marked from 'marked';
+import matter from 'gray-matter';
+import formatDate from 'date-fns/format';
+import readingTime from 'reading-time';
 
 // Support JSX syntax highlighting
 require('prismjs/components/prism-jsx.min');
