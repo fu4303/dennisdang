@@ -25,36 +25,31 @@
   .container {
     max-width: 725px;
     margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .post {
-    margin-bottom: 16px;
+    padding: 0 48px;
   }
 
   .posts {
     list-style: none;
+    margin-bottom: 48px;
     padding-left: 0;
   }
 
-  /* .title {
-    color: #616eb7;
-    font-size: 22px;
-  } */
+  .post-item {
+    margin-bottom: 24px;
+  }
 
+  h2 {
+    margin-bottom: 0;
+  }
   h2,
   .post-item-footer {
-    font-family: Rubik, sans-serif;
-    font-weight: 700;
+    color: #616eb7;
   }
+
   .post-item-date {
     color: #aaa;
-    text-align: left;
-    text-transform: uppercase;
     margin-right: 16px;
-  }
-  hr {
-    margin: 60px auto;
+    text-transform: uppercase;
   }
 </style>
 
@@ -69,17 +64,17 @@
 
   <ul class="posts">
     {#each posts as post, index}
-      {#if index}
-        <hr />
-      {/if}
       <div class="post-item">
         <h2>
           <a rel="prefetch" href="blog/{post.slug}">{post.title}</a>
         </h2>
-        <p>{post.excerpt}</p>
+        {#if post.except}
+          <p>{post.excerpt}</p>
+        {/if}
         <div class="post-item-footer">
-          <span class="post-item-date">— {post.printDate}</span>
+          <span class="post-item-date">{post.printDate}</span>
         </div>
+        <hr />
       </div>
     {/each}
   </ul>
