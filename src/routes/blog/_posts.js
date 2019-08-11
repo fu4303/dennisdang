@@ -11,7 +11,7 @@ import formatDate from 'date-fns/format';
 import readingTime from 'reading-time';
 
 // Support JSX syntax highlighting
-require('prismjs/components/prism-jsx.min');
+// import PrismJsx from ('prismjs/components/prism-jsx.min.js');
 
 const cwd = process.cwd();
 const POSTS_DIR = path.join(cwd, 'src/routes/blog/posts/');

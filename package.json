@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "NODE_ENV=production sapper build --legacy",
-    "export": "sapper export",
+    "build:server": "NODE_ENV=production sapper build --legacy",
+    "build": "sapper export",
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
