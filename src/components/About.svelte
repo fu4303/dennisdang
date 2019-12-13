@@ -49,8 +49,13 @@
     color: #616eb7;
   }
 
+  .mb-3 {
+    margin-block-end: 3px;
+  }
+
   .work {
-    padding-left: 20px;
+    list-style: none;
+    padding-inline-start: 0;
   }
   .work li {
     font-size: 16px;
@@ -97,8 +102,8 @@
       </div>
       <div>
         <h3>Trending Interests</h3>
-        <p class="highlight">Ocaml + Reason, Swift.</p>
-        <p>Urban hip-hop dance, politics, podcasts.</p>
+        <p class="highlight mb-3">Ocaml + Reason, Swift.</p>
+        <p class="mb-3">Urban hip-hop dance, economics, podcasts.</p>
       </div>
     </li>
 
@@ -115,13 +120,10 @@
       <div>
         <h3>Work Experience</h3>
         <ul class="work">
-          <li class="highlight">
-            Mount Sinai Digital Consumer
-            <span>(current)</span>
-          </li>
-          <li>Kelley Blue Book</li>
-          <li>Experian</li>
-          <li>Q2 Solutions</li>
+          <li class="highlight mb-3">Mount Sinai Digital Consumer</li>
+          <li class="mb-3">Kelley Blue Book</li>
+          <li class="mb-3">Experian</li>
+          <li class="mb-3">Q2 Solutions</li>
         </ul>
       </div>
     </li>
@@ -138,7 +140,7 @@
       </div>
       <div>
         <h3>Tech Stack</h3>
-        <p>Javascript & Typescript, React, AWS, Go, Node, GraphQL, CSS</p>
+        <p>Javascript & TS, React, Go, Node, GraphQL, AWS</p>
       </div>
     </li>
 
