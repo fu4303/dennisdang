@@ -9,7 +9,7 @@
 <script>
   import Header from "../../components/Header.svelte";
   export let posts;
-  export let pirateMode = true;
+  export const pirateMode = true;
 </script>
 
 <style>

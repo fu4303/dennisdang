@@ -61,7 +61,7 @@ const posts = fs
     const html = marked(content);
     const readingStats = readingTime(content);
     const printReadingTime = readingStats.text;
-    const printDate = formatDate(new Date(date), 'MMMM D, YYYY');
+    const printDate = formatDate(new Date(date), 'MMM d, yyyy');
 
     return {
       title: title || slug,
