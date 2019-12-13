@@ -93,5 +93,4 @@
   <article class="content">
     {@html post.html}
   </article>
-  <hr />
 </div>

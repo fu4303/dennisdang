@@ -74,7 +74,6 @@
         <div class="post-item-footer">
           <span class="post-item-date">{post.printDate}</span>
         </div>
-        <hr />
       </div>
     {/each}
   </ul>
