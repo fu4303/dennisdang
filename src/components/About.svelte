@@ -85,7 +85,7 @@
         <h3>Writings and Blog</h3>
         <p>
           Check out my
-          <a href="/blog">blog!</a>
+          <a href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=95f389215d084988a6cd8f961e67195e">blog!</a>
         </p>
       </div>
     </li>
