@@ -85,7 +85,10 @@
         <h3>Writings and Blog</h3>
         <p>
           Check out my
-          <a href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=95f389215d084988a6cd8f961e67195e">blog!</a>
+          <a
+            href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=95f389215d084988a6cd8f961e67195e">
+            blog!
+          </a>
         </p>
       </div>
     </li>
@@ -102,8 +105,11 @@
       </div>
       <div>
         <h3>Trending Interests</h3>
-        <p class="highlight mb-3">Ocaml + Reason, Swift.</p>
-        <p class="mb-3">Urban hip-hop dance, economics, podcasts.</p>
+        <p class="mb-3">
+          <span class="highlight">Swift,</span>
+          Web3, OCaml & Reason.
+        </p>
+        <p class="mb-3">House dance, economics, remote work, podcasts.</p>
       </div>
     </li>
 
@@ -140,7 +146,7 @@
       </div>
       <div>
         <h3>Tech Stack</h3>
-        <p>Javascript & TS, React, Go, Node, GraphQL, AWS</p>
+        <p>Go, Javascript & Typescript, React,  Node, GraphQL, AWS.</p>
       </div>
     </li>
 
@@ -167,8 +173,7 @@
             Twitter
           </a>
           {' '} or email me
-          <a href="mailto:dang.dennis9@gmail.com">here</a>
-          .
+          <a href="mailto:dang.dennis9@gmail.com">here</a>.
         </p>
       </div>
     </li>
