@@ -34,12 +34,6 @@
     border-radius: 50%;
   }
 
-  .skill-highlight {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 18px;
-    margin: 0;
-  }
-
   @media (min-width: 480px) {
     h1 {
       font-size: 32px;
@@ -48,7 +42,7 @@
 </style>
 
 <div class="bio">
-  <div class="secret" aria-label="Click me for a secret">
+  <div class="secret" aria-label="Click me for a secret" on:click="{() => pirateMode = !pirateMode}">
     {#if pirateMode}
       <img
         src="pirate/man-piracy-pirate-sea-set.svg"
@@ -60,6 +54,5 @@
 
   <h1 class="name">Dennis Dang</h1>
   <h3 class="job-title">Software Engineer</h3>
-  <h5 class="skill-highlight">Core: Javascript</h5>
 
 </div>
