@@ -1,14 +1,23 @@
 <script>
+  import Toggle from "./Toggle.svelte";
+
   export let segment;
 </script>
 
 <style>
   nav ul {
     display: flex;
-    justify-content: flex-end;
     list-style: none;
     margin-top: 1rem;
     margin-right: 1rem;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 550px) {
+    nav ul {
+      justify-content: flex-end;
+    }
   }
 
   nav li a {
@@ -44,6 +53,9 @@
 
 <nav>
   <ul>
+    <!-- <li>
+      <Toggle />
+    </li> -->
     <li>
       <a class={segment === undefined ? 'selected' : ''} href=".">home</a>
     </li>
@@ -72,7 +84,7 @@
       <a
         rel="prefetch"
         class={`${segment === 'blog' ? 'selected' : ''} blog`}
-        href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=95f389215d084988a6cd8f961e67195e">
+        href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=20ee648464b84127abc339fda8f29e38">
         blog
       </a>
     </li>

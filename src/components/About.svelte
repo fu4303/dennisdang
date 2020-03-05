@@ -86,7 +86,7 @@
         <p>
           Check out my
           <a
-            href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=95f389215d084988a6cd8f961e67195e">
+            href="https://www.notion.so/e45cad09a3cf4d81b2f50b363c610663?v=20ee648464b84127abc339fda8f29e38">
             blog!
           </a>
         </p>

@@ -60,6 +60,6 @@
 
   <h1 class="name">Dennis Dang</h1>
   <h3 class="job-title">Software Engineer</h3>
-  <h5 class="skill-highlight">Core: Javascript</h5>
+  <h5 class="skill-highlight">Product Builder</h5>
 
 </div>
