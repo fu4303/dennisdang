@@ -126,7 +126,7 @@
       <div>
         <h3>Work Experience</h3>
         <ul class="work">
-          <li class="highlight mb-3">Mount Sinai Digital Consumer</li>
+          <li class="highlight mb-3">Mount Sinai Consumer Digital</li>
           <li class="mb-3">Kelley Blue Book</li>
           <li class="mb-3">Experian</li>
           <li class="mb-3">Q2 Solutions</li>
