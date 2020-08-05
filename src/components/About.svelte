@@ -106,8 +106,8 @@
       <div>
         <h3>Trending Interests</h3>
         <p class="mb-3">
-          <span class="highlight">Swift,</span>
-          Web3, OCaml & Reason.
+          <span class="highlight">Elixir,</span>
+          Web3, ReasonML, conventions over configurations.
         </p>
         <p class="mb-3">House dance, economics, remote work, podcasts.</p>
       </div>
