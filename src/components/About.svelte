@@ -106,10 +106,10 @@
       <div>
         <h3>Trending Interests</h3>
         <p class="mb-3">
-          <span class="highlight">Elixir,</span>
-          Web3, ReasonML, conventions over configurations.
+          <span class="highlight">Elixir, Elm,</span>
+          Web3, conventions over configurations.
         </p>
-        <p class="mb-3">House dance, economics, remote work, podcasts.</p>
+        <p class="mb-3">House dance, spooky podcasts.</p>
       </div>
     </li>
 
@@ -126,7 +126,8 @@
       <div>
         <h3>Work Experience</h3>
         <ul class="work">
-          <li class="highlight mb-3">Mount Sinai Consumer Digital</li>
+          <li class="highlight mb-3">Canopy Inc.</li>
+          <li class="mb-3">Mount Sinai Consumer Digital</li>
           <li class="mb-3">Kelley Blue Book</li>
           <li class="mb-3">Experian</li>
           <li class="mb-3">Q2 Solutions</li>
@@ -146,7 +147,7 @@
       </div>
       <div>
         <h3>Tech Stack</h3>
-        <p>Go, Javascript & Typescript, React,  Node, GraphQL, AWS.</p>
+        <p>Go, Javascript & Typescript, ReasonML, React, Node, GraphQL, AWS.</p>
       </div>
     </li>
 
